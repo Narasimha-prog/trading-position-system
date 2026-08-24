@@ -8,6 +8,7 @@ import com.indothai.order_service.parser.OrderCsvParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
@@ -17,6 +18,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
 @Component
+@ConditionalOnProperty(name = "order.runner.enabled", havingValue = "true", matchIfMissing = true)
 public class OrderStreamRunner implements CommandLineRunner {
 
     private static final Logger log = LoggerFactory.getLogger(OrderStreamRunner.class);
