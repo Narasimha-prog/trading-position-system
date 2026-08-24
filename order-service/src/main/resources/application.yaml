@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: order-service
+
+server:
+  port: 8081
+
+order:
+  csv-path: classpath:order_updates.csv
+  target-url: http://localhost:8081
+  rate-limit: 50
