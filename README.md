@@ -1,5 +1,4 @@
-# trading-position-system
-Real-time, thread-safe trading position tracking system with streaming CSV order ingestion and throttling built with Java 21 &amp; Spring Boot.
+
 # Trading Position Maintaining & Order Update System (Java 21)
 
 Two decoupled, lightweight Spring Boot services that process order update streams from a CSV file and maintain in-memory net positions per symbol.
