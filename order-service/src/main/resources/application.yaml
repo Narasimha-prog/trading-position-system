@@ -7,5 +7,5 @@ server:
 
 order:
   csv-path: classpath:order_updates.csv
-  target-url: http://localhost:8081
+  target-url: http://localhost:8080
   rate-limit: 50
